@@ -11,8 +11,11 @@ export default {
       },
       colors: {
         navy: '#0f172a',
-        orange: '#f97316',
-      }
+        orange: {
+          500: '#f97316',
+          600: '#ea580c',
+      },
+}
     },
   },
   plugins: [],

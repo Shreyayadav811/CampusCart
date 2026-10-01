@@ -80,14 +80,14 @@ const ListingDetail = () => {
                 <User size={14} /> {listing.seller?.name} • {listing.seller?.hostel || 'GL Bajaj'}
               </Link>
             </div>
-            
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition"
-            >
-              <MessageCircle size={18} /> Contact on WhatsApp
-            </a>
+            <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition"
+>
+  <MessageCircle size={18} /> Contact on WhatsApp
+</a>
           </div>
         </div>
       </div>

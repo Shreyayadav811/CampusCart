@@ -17,7 +17,7 @@ const ListingCard = ({ listing }) => {
         <img
           src={listing.images?.[0] || 'https://via.placeholder.com/300x200?text=No+Image'}
           alt={listing.title}
-          className="w-full h-48 object-cover hover:opacity-95 transition"
+          className="w-full h-48 object-contain hover:opacity-95 transition"
         />
       </Link>
       <div className="p-4">
@@ -42,13 +42,15 @@ const ListingCard = ({ listing }) => {
             {listing.seller?.name} • {listing.seller?.hostel || 'GL Bajaj'}
           </Link>
           
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 bg-green-500 hover:bg-green-600 text-white text-xs px-3 py-1.5 rounded-lg font-medium transition"
+          <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 bg-green-500 hover:bg-green-600 text-white text-xs px-3 py-1.5 rounded-lg font-medium transition"
           >
-            <MessageCircle size={12} /> WhatsApp
-          </a>
+  <MessageCircle size={12} /> WhatsApp
+</a>
+           
         </div>
       </div>
     </div>
